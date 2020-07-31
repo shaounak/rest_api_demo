@@ -6,7 +6,6 @@ from datetime import datetime
 
 from rest_api_demo.database import db
 
-
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80))

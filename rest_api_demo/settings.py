@@ -8,6 +8,14 @@ RESTPLUS_VALIDATE = True
 RESTPLUS_MASK_SWAGGER = False
 RESTPLUS_ERROR_404_HELP = False
 
+# Database Details
+DB_USER = 'dmu_nasisha'
+DB_PASSWORD = 'Axtria@0620'
+DB_SERVER = '172.31.47.186'
+DB_DATABASE = 'pg_datamax_dev'
+PG_SCHEMA = 'dmu_nasisha'
+DB_URI= f'postgres://{DB_USER}:{DB_PASSWORD}@{DB_SERVER}:5432/{DB_DATABASE}'
+
 # SQLAlchemy settings
-SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite'
+SQLALCHEMY_DATABASE_URI = DB_URI
 SQLALCHEMY_TRACK_MODIFICATIONS = False
